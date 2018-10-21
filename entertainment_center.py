@@ -16,7 +16,14 @@ transporter = media.Movie("The Transporter", datetime.datetime(2009,12,18),
                           "https://www.youtube.com/watch?v=sYJ5LDoWRT4",
                           6.8, ["Jason Statham","Shu Qi"])
 
+'''3_idiots = media.Movie("3 Idiots", datetime.datetime(2009,12,25),
+                          "Awsome movie in bollywood history describing education system in India along with love and friendship drama",
+                          ["drama","comedy"],
+                          "https://upload.wikimedia.org/wikipedia/en/d/df/3_idiots_poster.jpg",
+                          "https://www.youtube.com/watch?v=sYJ5LDoWRT4",
+                          6.8, ["Jason Statham","Shu Qi"]) '''
 movies = [avatar,transporter]
 print(media.Movie.__doc__)
-print(type(avatar.release_date))
+#print(type(avatar.release_date))
+print(avatar.get_genure())
 fresh_tomatoes.open_movies_page(movies)
